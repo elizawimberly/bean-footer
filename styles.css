@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+  grid-gap: 20px;
+}
+
+.footer-text {
+  grid-column: span 6; /* Occupies the first 6 columns */
+  line-height: 1.5; /* Adjusts line height */
+}
+
+.footer-text p {
+  grid-column: span 3; /* The text only takes 3 out of 6 columns */
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /* 3 columns, each taking 2 columns */
+  grid-column: span 6; /* Occupies the remaining 6 columns */
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  line-height: 1; /* Set line-height to 1 for vertical list */
+}
+
+.footer-links .column:nth-child(2) ul li {
+  line-height: 2; /* Set line-height to 2 for the second section */
+}
+
+.footer-links .column:nth-child(3) ul li {
+  line-height: 2; /* Set line-height to 2 for the third section */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Reverted bottom footer styling */
+.bottom-footer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute space between items */
+  width: 100%; /* Ensures that the ul takes the full width of the footer */
+  /* justify-content: space-between; */
+}
+
+.bottom-footer ul li {
+  display: inline;
+}
+
+.bottom-footer ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+}
+
+.bottom-footer p {
+  font-size: 12px;
+  color: #666;
+}
