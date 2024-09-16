@@ -18,13 +18,14 @@ footer {
   grid-auto-rows: 1fr; /* Equal height for rows based on column width */
   height: calc(6 * 1fr); /* The footer should be 5 rows high */
   gap: 0px; /* Adjust the gap between columns and rows */
+  height: 100vh;
 }
 
 .footer-container {
   grid-column: span 12; /* Footer content should span all 12 columns */
   display: grid;
   grid-template-columns: repeat(12, 1fr); /* 12 columns */
-  grid-row: span 6; /* Footer content should span 5 rows */
+  grid-row: 2 / 5; /* Footer content should span 5 rows */
   gap: 20px;
 }
 
@@ -74,7 +75,10 @@ footer {
   border-top: 1px solid #ccc;
   /*  */
   grid-column: span 12;
+  grid-row: 6;
   justify-content: space-evenly;
+  align-items: flex-end;
+  padding-bottom: 20px;
 }
 
 .bottom-footer ul {
