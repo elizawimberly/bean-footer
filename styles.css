@@ -10,13 +10,22 @@ body {
 
 footer {
   background-color: #f8f8f8;
-  padding: 40px;
+  /* padding: 40px; */
+  /* padding-top: 40px; */
+  padding-inline: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+  grid-auto-rows: 1fr; /* Equal height for rows based on column width */
+  height: calc(6 * 1fr); /* The footer should be 5 rows high */
+  gap: 0px; /* Adjust the gap between columns and rows */
 }
 
 .footer-container {
+  grid-column: span 12; /* Footer content should span all 12 columns */
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
-  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr); /* 12 columns */
+  grid-row: span 6; /* Footer content should span 5 rows */
+  gap: 20px;
 }
 
 .footer-text {
@@ -63,6 +72,9 @@ footer {
   align-items: center;
   padding-top: 20px;
   border-top: 1px solid #ccc;
+  /*  */
+  grid-column: span 12;
+  justify-content: space-evenly;
 }
 
 .bottom-footer ul {
