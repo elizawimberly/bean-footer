@@ -85,7 +85,8 @@
 }
 
 .legal-links a,
-.copyright p {
+.copyright p,
+.copyright a {
   color: #666;
   text-decoration: none;
   font-size: 0.9rem;
@@ -110,7 +111,6 @@
 
   .footer-section.about p {
     width: 50%;
-    /* margin: 0 auto; */
   }
 
   .links {
@@ -144,7 +144,7 @@
   }
 
   .legal-links a,
-  .copyright p {
+  .copyright p a {
     display: block;
     margin-bottom: 0.5rem;
   }
