@@ -1,8 +1,5 @@
-/* Footer Styles */
 .footer {
-  background-color: #f8f8f8;
-  padding: 2rem 2rem;
-  font-family: Arial, sans-serif;
+  padding: 2rem 0;
 }
 
 .footer-content {
@@ -53,6 +50,10 @@
   margin-bottom: 0.5rem;
 }
 
+.link-column.artists-column ul li {
+  margin-bottom: 1.5rem;
+}
+
 .link-column a {
   color: #333;
   text-decoration: none;
@@ -83,7 +84,6 @@
   font-size: 0.9rem;
 }
 
-/* Responsive styles for iPad portrait and smaller screens */
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
