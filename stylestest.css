@@ -135,4 +135,10 @@
     flex-direction: column;
     align-items: stretch;
   }
+
+  @media screen and (max-width: 480px) {
+    .footer-section.about p {
+      width: 80%;
+    }
+  }
 }
