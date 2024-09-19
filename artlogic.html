@@ -81,105 +81,144 @@
 <style>
   <!--
     .footer {
-        padding: 2rem 0;
-      }
+      padding: 2rem 0;
+    }
 
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .footer-section {
+      margin-bottom: 1rem;
+    }
+
+    .about {
+      width: 50%;
+      padding-right: 25%;
+      box-sizing: border-box;
+    }
+
+    .about p {
+      max-width: 100%;
+    }
+
+    .links {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .link-column {
+      flex: 1;
+      min-width: 150px;
+      margin-right: 1rem;
+    }
+
+    .link-column h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .link-column ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .link-column ul li {
+      margin-bottom: 0;
+    }
+
+    .link-column.artists-column ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .link-column.visit-column ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .link-column a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .link-column a:hover {
+      /* text-decoration: underline; */
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding: 1rem 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom > * {
+      flex: 1 1 0;
+      text-align: center;
+    }
+
+    .legal-links {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .legal-links a {
+      color: #666;
+      text-decoration: none;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      padding: 0 1rem;
+      padding-bottom: 0.75rem;
+    }
+
+    @media screen and (max-width: 1100px) {
       .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        margin: 0 auto;
+        flex-direction: column;
       }
 
-      .footer-section {
-        margin-bottom: 1rem;
+      .footer-section.about {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
       }
 
-      .about {
+      .footer-section.about p {
         width: 50%;
-        padding-right: 25%;
-        box-sizing: border-box;
-      }
-
-      .about p {
-        max-width: 100%;
       }
 
       .links {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
         justify-content: space-between;
       }
 
       .link-column {
-        flex: 1;
-        min-width: 150px;
-        margin-right: 1rem;
+        flex: 0 0 33.333%;
+        margin-right: 0;
+        margin-bottom: 16px;
       }
 
-      .link-column h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .link-column ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      .link-column ul li {
-        margin-bottom: 0.5rem;
-      }
-
-      .link-column.artists-column ul li {
-        margin-bottom: 1.5rem;
-      }
-
-      .link-column.visit-column ul li {
-        margin-bottom: 1.5rem;
-      }
-
-      .link-column a {
-        color: #333;
-        text-decoration: none;
-      }
-
-      .link-column a:hover {
-        /* text-decoration: underline; */
+      .link-column.about-column,
+      .link-column.artists-column,
+      .link-column.visit-column {
+        text-align: left;
       }
 
       .footer-bottom {
-        margin-top: 2rem;
-        padding: 1rem 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        padding: 16px 10%;
+        flex-direction: column;
+        align-items: stretch;
       }
 
-      .footer-bottom > * {
-        flex: 1 1 0;
-        text-align: center;
-      }
-
-      .legal-links {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        flex-wrap: wrap;
-      }
-
-      .legal-links a {
-        color: #666;
-        text-decoration: none;
-        font-size: 0.9rem;
-        white-space: nowrap;
-        padding: 0 1rem;
-        padding-bottom: 0.75rem;
-      }
-
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 520px) {
         .footer-content {
           flex-direction: column;
         }
@@ -187,42 +226,67 @@
         .footer-section.about {
           width: 100%;
           padding-right: 0;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
 
         .footer-section.about p {
-          width: 50%;
+          width: 80%;
         }
 
         .links {
           width: 100%;
-          flex-direction: row;
-          justify-content: space-between;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: auto;
+          position: relative;
         }
 
         .link-column {
-          flex: 0 0 33.333%;
-          margin-right: 0;
+          width: 50%;
+        }
+
+        .link-column.about-column {
+          order: 1;
+          height: auto;
           margin-bottom: 16px;
         }
 
-        .link-column.about-column,
-        .link-column.artists-column,
+        .link-column.artists-column {
+          order: 2;
+          margin-top: -1rem; /* Adjust this value to fine-tune vertical position */
+        }
+
         .link-column.visit-column {
-          text-align: left;
+          order: 3;
+          width: 50%;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .link-column ul li {
+          margin-bottom: 0.25rem;
+        }
+
+        .link-column.artists-column ul li,
+        .link-column.visit-column ul li {
+          margin-bottom: 0.75rem;
         }
 
         .footer-bottom {
-          padding: 16px 10%;
-          flex-direction: column;
-          align-items: stretch;
+          padding: 1rem 5%;
         }
 
-    @media screen and (max-width: 480px) {
-      .footer-section.about p {
-        width: 80%;
+        .legal-links {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .legal-links a {
+          padding: 0.5rem 0;
+        }
       }
     }
-      }
     -->
 </style>

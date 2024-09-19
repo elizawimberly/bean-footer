@@ -47,7 +47,7 @@
 }
 
 .link-column ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .link-column.artists-column ul li {
@@ -136,7 +136,7 @@
     align-items: stretch;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 520px) {
     .footer-content {
       flex-direction: column;
     }
@@ -167,7 +167,7 @@
     .link-column.about-column {
       order: 1;
       height: auto;
-      margin-bottom: 0;
+      margin-bottom: 16px;
     }
 
     .link-column.artists-column {
@@ -197,7 +197,7 @@
     }
 
     .legal-links {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
 
