@@ -70,7 +70,6 @@
 .footer-bottom {
   margin-top: 2rem;
   padding: 1rem 20%;
-  border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,18 +87,12 @@
   width: 100%;
 }
 
-.legal-links a,
-.copyright p,
-.copyright a {
+.legal-links a {
   color: #666;
   text-decoration: none;
   font-size: 0.9rem;
   white-space: nowrap;
   padding: 0 10px;
-}
-
-.copyright {
-  width: 100%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -147,13 +140,8 @@
     align-items: stretch;
   }
 
-  .legal-links a,
-  .copyright p a {
+  .legal-links a {
     display: block;
     margin-bottom: 0.5rem;
-  }
-
-  .copyright {
-    text-align: center;
   }
 }

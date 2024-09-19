@@ -11,11 +11,10 @@
     </div>
     <div class="footer-section links">
       <div class="link-column about-column">
-        <p>
-          <span><a href="https://vefagallery.com/about">About</a></span>
-        </p>
         <ul>
-          <li><a href="https://vefagallery.com/about">VEPA Gallery</a></li>
+          <li><a href="https://vefagallery.com/about">About</a></li>
+          <li></li>
+          <li><a href="https://vefagallery.com/about">VEFA Gallery</a></li>
           <li>
             <a href="https://vefagallery.com/about/curatorial-vision"
               >Curatorial Vision</a
@@ -46,26 +45,31 @@
       <div class="link-column visit-column">
         <ul>
           <li>
-            <span>Visit</span>
-            <a href="https://maps.app.goo.gl/JCc4U7jRAcuxmp589"
-              >21825 Hawthorne Blvd.<br />Torrance, CA 90503</a
-            >
+            <a>Visit</a><br />
+            <a href="https://maps.app.goo.gl/JCc4U7jRAcuxmp589">
+              21825 Hawthorne Blvd.<br />
+              Torrance, CA 90503
+            </a>
           </li>
+
           <li>
-            <span>Hours</span>
+            <a>Hours</a><br />
             Tuesday-Saturday 10-6
           </li>
+
           <li>
-            <span>Phone</span>
+            <a>Phone</a><br />
             +1 310 251 2944
           </li>
+
           <li>
-            <span>Subscribe</span>
+            <a>Subscribe</a><br />
             <a href="https://vefagallery.com/mailing-list">Newsletter</a>
           </li>
+
           <li>
-            <span>Follow</span>
-            <a href="https://instagram.com/vefagallery">Instagram</a>
+            <a>Follow</a><br />
+            <a href="https://instagram.com/vefagallery">Instagram</a><br />
             <a href="https://youtube.com/@VEFAGallery">YouTube</a>
           </li>
         </ul>
@@ -79,7 +83,7 @@
       <a href="#">Accessibility</a>
     </div>
     <div class="copyright">
-      <p>Artworks © the Artist. © 2024 VEPA Gallery.</p>
+      <a>Artworks © the Artist. © 2024 VEPA Gallery.</a>
     </div>
   </div>
 </footer>
@@ -140,6 +144,10 @@
     margin-bottom: 1.5rem;
   }
 
+  .link-column.visit-column ul li {
+    margin-bottom: 1.5rem;
+  }
+
   .link-column a {
     color: #333;
     text-decoration: none;
@@ -171,7 +179,8 @@
   }
 
   .legal-links a,
-  .copyright p {
+  .copyright p,
+  .copyright a {
     color: #666;
     text-decoration: none;
     font-size: 0.9rem;
@@ -229,7 +238,7 @@
     }
 
     .legal-links a,
-    .copyright p {
+    .copyright p a {
       display: block;
       margin-bottom: 0.5rem;
     }
