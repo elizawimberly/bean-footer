@@ -52,6 +52,10 @@ html {
   align-items: center;
 }
 
+.secondary-text-inner {
+  line-height: 24px;
+}
+
 h2,
 h3,
 h5 {
