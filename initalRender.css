@@ -33,11 +33,23 @@ html {
   z-index: 1;
 }
 
+.text-overlay-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .secondary-text {
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 6;
   grid-row: 7 / span 6;
   padding: 20px;
   /* background-color: #f0f0f0; */
+}
+
+.secondary-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2,
@@ -228,8 +240,10 @@ a {
 
 h3 {
   font-size: 14px;
+  line-height: 20px;
 }
 
-.secondary-text.inner {
+.secondary-text-inner {
   font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+  font-size: 16px;
 }
