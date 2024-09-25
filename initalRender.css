@@ -31,9 +31,9 @@ html {
 
 .text-overlay {
   grid-column: 7 / span 5;
-  grid-row: 6 / span 7;
+  grid-row: 5 / span 7;
   background-color: rgba(255, 255, 255, 1);
-  padding: 20px;
+  padding: 40px 20px;
   z-index: 1;
 }
 
@@ -57,13 +57,23 @@ html {
 }
 
 h2 {
-  /* margin-bottom: 0; */
   margin: 0;
 }
 
 h3 {
   font-size: 14px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  margin-right: 50px;
+  line-height: 20px;
+}
+
+h5 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 4px;
+  margin-right: 0;
 }
 
 .secondary-text-inner {
@@ -71,6 +81,7 @@ h3 {
 }
 
 .subheading {
+  margin-inline: 50px;
   margin-bottom: 16px;
 }
 
@@ -80,10 +91,10 @@ h3 {
 
 /* End of vefa style tag content */
 
-h3,
+/* h3,
 h5 {
   margin: 0 0 10px 0;
-}
+} */
 
 h2 {
   font-size: 2.5em;
