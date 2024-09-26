@@ -10,9 +10,9 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 1fr);
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 12 / 11;
   margin: auto;
 }
 
@@ -90,7 +90,16 @@ h5 {
 
 @media (min-width: 840px) and (max-width: 1023px) {
   body {
-    background-color: red;
+    /* background-color: red; */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
   }
 
   .text-overlay {
@@ -108,9 +117,56 @@ h5 {
 
 @media (max-width: 840px) {
   body {
-    background-color: blue;
+    /* background-color: blue; */
   }
-  /* other mobile styles */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    width: 100%;
+    aspect-ratio: 5 / 14;
+    margin: auto;
+  }
+
+  .text-overlay {
+    grid-column: 2 / span 5;
+    grid-row: 5 / span 4;
+    z-index: auto;
+  }
+
+  .secondary-text {
+    grid-column: 2 / span 3;
+    grid-row: 10 / span 5;
+    padding: 0;
+  }
+
+  /* grid test code */
+
+  .grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-rows: repeat(14, 1fr); */
+    width: 100%;
+    /* aspect-ratio: 7 / 14; */
+    margin: auto;
+  }
+
+  .grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-rows: repeat(11, 1fr); */
+    width: 100%;
+    /* aspect-ratio: 12 / 11; */
+    margin: auto;
+    aspect-ratio: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .secondary-text-inner {
+    margin: 0;
+  }
 }
 
 /* End of vefa style tag content */
