@@ -55,6 +55,11 @@ html {
   align-items: center;
 }
 
+.secondary-text-inner {
+  font-size: 19px;
+  line-height: 24px;
+}
+
 h2 {
   margin: 0;
 }
@@ -75,10 +80,6 @@ h5 {
   margin-right: 0;
 }
 
-.secondary-text-inner {
-  line-height: 24px;
-}
-
 .subheading {
   margin-inline: 50px;
   margin-bottom: 16px;
@@ -89,10 +90,6 @@ h5 {
 }
 
 @media (min-width: 840px) and (max-width: 1023px) {
-  body {
-    /* background-color: red; */
-  }
-
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -100,6 +97,7 @@ h5 {
     width: 100%;
     aspect-ratio: 1 / 1;
     margin: auto;
+    padding-bottom: 10%;
   }
 
   .text-overlay {
@@ -116,52 +114,25 @@ h5 {
 }
 
 @media (max-width: 840px) {
-  body {
-    /* background-color: blue; */
-  }
-
   .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     width: 100%;
-    aspect-ratio: 5 / 14;
     margin: auto;
+    aspect-ratio: auto;
   }
 
   .text-overlay {
     grid-column: 2 / span 5;
     grid-row: 5 / span 4;
-    z-index: auto;
+    z-index: 1;
   }
 
   .secondary-text {
     grid-column: 2 / span 3;
     grid-row: 10 / span 5;
     padding: 0;
-  }
-
-  /* grid test code */
-
-  .grid-container {
-    display: grid;
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* grid-template-rows: repeat(14, 1fr); */
-    width: 100%;
-    /* aspect-ratio: 7 / 14; */
-    margin: auto;
-  }
-
-  .grid-container {
-    display: grid;
-    /* grid-template-columns: repeat(12, 1fr); */
-    /* grid-template-rows: repeat(11, 1fr); */
-    width: 100%;
-    /* aspect-ratio: 12 / 11; */
-    margin: auto;
-    aspect-ratio: auto;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(12, 1fr);
   }
 
   .secondary-text-inner {
@@ -202,7 +173,7 @@ h5 {
 /* TYPOGRAPHY */
 
 p {
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 19.36px;
 }
 
@@ -363,7 +334,7 @@ h3 {
 
 .secondary-text-inner {
   font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 body {
