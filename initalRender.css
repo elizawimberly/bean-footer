@@ -7,7 +7,6 @@ html {
 }
 
 /* beginning of vefa style tag content */
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -87,6 +86,31 @@ h5 {
 
 .subheading::after {
   content: none;
+}
+
+@media (min-width: 840px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+
+  .text-overlay {
+    grid-column: 6 / span 5;
+    grid-row: 5 / span 8;
+  }
+
+  .secondary-text {
+    grid-column: 1 / span 5;
+    grid-row: 7 / span 6;
+    padding-right: 0;
+    padding-left: 40%;
+  }
+}
+
+@media (max-width: 840px) {
+  body {
+    background-color: blue;
+  }
+  /* other mobile styles */
 }
 
 /* End of vefa style tag content */
@@ -284,4 +308,8 @@ h3 {
 .secondary-text-inner {
   font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
   font-size: 16px;
+}
+
+body {
+  font-family: "Uni Grotesk Std Medium", sans-serif;
 }
