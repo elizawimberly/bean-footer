@@ -11,16 +11,31 @@
       <div class="grid-container">
         <div class="image-container">
           <img
-            src="./assets/artofsurf.jpg"
-            alt="Abstract surf art"
             class="image"
+            alt="Abstract surf art"
+            src="https://artlogic-res.cloudinary.com/w_2600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1067/usr/images/feature_panels/image/items/96/96ebc235ce13464aa93dd00749d456ea/es22-1-copysmalljpg.jpg"
+            height="695"
+            width="1211"
+            data-href="https://vefagallery.com/exhibition/the-art-of-surf"
+            id="clickable-surf-image"
+            style="cursor: pointer"
           />
         </div>
         <div class="text-overlay">
           <div class="text-overlay-container">
             <h5>November 9 - January 4, 2025</h5>
-            <h2>The Art of Surf</h2>
-            <h3 class="subheading">The Inaugural Exhibition of VEFA Gallery</h3>
+            <a href="https://vefagallery.com/exhibition/the-art-of-surf">
+              <h2>
+                <a href="https://vefagallery.com/exhibition/the-art-of-surf"
+                  >The Art of Surf</a
+                >
+              </h2>
+              <h3 class="subheading">
+                <a href="https://vefagallery.com/exhibition/the-art-of-surf">
+                  The Inaugural Exhibition of VEFA Gallery
+                </a>
+              </h3>
+            </a>
             <h3 class="subheading">
               Homage to local surf/skate culture featuring
             </h3>
@@ -38,7 +53,7 @@
         <div class="secondary-text">
           <div class="secondary-text-container">
             <p class="secondary-text-inner">
-              VEFA Gallery is a contemporary art gallery bringing global
+              &nbsp; VEFA Gallery is a contemporary art gallery bringing global
               artistic discourse to Southern California. Our mission is to bring
               together artists from as wide range of perspectives as possible
               around a topic that's relevant today. We believe art is an
@@ -51,3 +66,11 @@
     </main>
   </body>
 </html>
+
+<script>
+  document
+    .getElementById("clickable-surf-image")
+    .addEventListener("click", function () {
+      window.location.href = this.getAttribute("data-href");
+    });
+</script>

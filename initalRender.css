@@ -10,9 +10,9 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   width: 100%;
-  aspect-ratio: 12 / 11;
+  aspect-ratio: 1 / 1;
   margin: auto;
 }
 
@@ -78,6 +78,10 @@ h5 {
   margin-left: 0;
   margin-bottom: 4px;
   margin-right: 0;
+}
+
+.secondary-text-inner {
+  line-height: 24px;
 }
 
 .subheading {
