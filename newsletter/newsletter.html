@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Art of Surf</title>
+    <link rel="stylesheet" href="initalRender.css" />
+  </head>
+  <body>
+    <main>
+      <div class="grid-container">
+        <div class="image-container">
+          <a
+            href="https://vefagallery.com/exhibition/the-art-of-surf"
+            class="image-link"
+            target="_self"
+          >
+            <img
+              class="image"
+              alt="Abstract surf art"
+              src="https://artlogic-res.cloudinary.com/w_2600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1067/usr/images/feature_panels/image/items/96/96ebc235ce13464aa93dd00749d456ea/es22-1-copysmalljpg.jpg"
+              height="695"
+              width="1211"
+            />
+          </a>
+          <span><br /></span>
+        </div>
+        <div class="text-overlay">
+          <div class="text-overlay-container">
+            <h5>November 9 - January 4, 2025</h5>
+            <h2>
+              <a href="https://vefagallery.com/exhibition/the-art-of-surf"
+                >The Art of Surf
+              </a>
+            </h2>
+            <h3 class="subheading">
+              <a href="https://vefagallery.com/exhibition/the-art-of-surf">
+                The Inaugural Exhibition of VEFA Gallery
+              </a>
+            </h3>
+            <h3 class="subheading">
+              Homage to local surf/skate culture featuring
+            </h3>
+            <h3>Debbie Daniels</h3>
+            <h3>Jud Hogan</h3>
+            <h3>HTJ</h3>
+            <h3>Walter Erra Hubert</h3>
+            <h3>Dennis Jarvis</h3>
+            <h3>David Krovblit</h3>
+            <h3>RISK ROCK</h3>
+            <h3>John DeTemple</h3>
+            <h3>Ben Thouard</h3>
+          </div>
+        </div>
+        <div class="secondary-text">
+          <div class="secondary-text-container">
+            <p class="secondary-text-inner">
+              &nbsp; The Grand Opening of VEFA Gallery. The Art of Surf is an
+              homage to Southern California&rsquo;s surf/skate culture. This
+              group show explores the history of surfing while providing an
+              insight to artworks today that embodies the ethos of what this
+              unique catharsis of expression means to Southern California. This
+              show will also explore the duality of how culture influences art
+              and vice-versa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<style>
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  /* beginning of vefa style tag content */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+  }
+
+  .image-container {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 6;
+    overflow: hidden;
+    display: grid;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text-overlay {
+    grid-column: 7 / span 5;
+    grid-row: 5 / span 7;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px 20px;
+    z-index: 1;
+  }
+
+  .text-overlay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .secondary-text {
+    grid-column: 1 / span 6;
+    grid-row: 7 / span 6;
+    padding: 20%;
+  }
+
+  .secondary-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondary-text-inner {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .image-link {
+    display: flex;
+    grid-row: 1 / span 1;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+    line-height: 20px;
+  }
+
+  h5 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 4px;
+    margin-right: 0;
+  }
+
+  .secondary-text-inner {
+    line-height: 24px;
+  }
+
+  .subheading {
+    margin-inline: 50px;
+    margin-bottom: 16px;
+  }
+
+  .subheading::after {
+    content: none;
+  }
+
+  @media (min-width: 840px) and (max-width: 1023px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      margin: auto;
+      padding-bottom: 10%;
+    }
+
+    .text-overlay {
+      grid-column: 6 / span 5;
+      grid-row: 5 / span 8;
+    }
+
+    .secondary-text {
+      grid-column: 1 / span 5;
+      grid-row: 7 / span 6;
+      padding-right: 0;
+      padding-left: 40%;
+    }
+  }
+
+  @media (max-width: 840px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      width: 100%;
+      margin: auto;
+      aspect-ratio: auto;
+    }
+
+    .image-container {
+      grid-column: 1 / span 12;
+      grid-row: 1 / span 5;
+      overflow: hidden;
+      display: grid;
+    }
+
+    .text-overlay {
+      grid-column: 2 / span 5;
+      grid-row: 3 / span 3;
+      z-index: 1;
+    }
+
+    .secondary-text {
+      grid-column: 2 / span 3;
+      grid-row: 6 / span 5;
+      padding: 0;
+    }
+
+    .secondary-text-inner {
+      margin-inline: 0;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    h3,
+    h3.subheading {
+      padding-left: 0;
+      padding-right: 0;
+      margin-inline: 0;
+    }
+  }
+
+  /* End of vefa style tag content */
+
+  /* h3,
+h5 {
+  margin: 0 0 10px 0;
+} */
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  span {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  h5 {
+    font-size: 2em;
+  }
+
+  /* past of global style */
+
+  /* TYPOGRAPHY */
+
+  p {
+    /* font-size: 16px; */
+    line-height: 19.36px;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 40.6px;
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+  }
+
+  h3  /* ARTIST LIST W MARGINS - FORMER H6 */ {
+    font-size: 20.4px;
+    line-height: 32.6px;
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  h4 /* SUBHEAD - FORMER H3 */ {
+    font-size: 17.3px;
+    line-height: 24.2px;
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+  }
+
+  h5 {
+    font-size: 13.6px;
+    line-height: 21.76px;
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+  }
+
+  h6 /* BIGGER EDGE - FORMER H4 */ {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    font-weight: 300;
+    font-size: 19.2px;
+    line-height: 24.2px;
+    text-transform: none !important;
+    letter-spacing: 0;
+  }
+
+  format {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    font-weight: 300;
+    font-size: 19.2px;
+    line-height: 24.2px;
+    text-transform: none !important;
+    letter-spacing: 0;
+  }
+
+  .image-caption {
+    text-align: right;
+    font-size: 14px;
+    line-height: 18.5px;
+    margin-right: 5px;
+  }
+
+  definition term {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    font-weight: 300;
+    font-size: 12.8px;
+    line-height: 14.8px;
+    text-transform: none !important;
+    letter-spacing: 0;
+  }
+
+  definition description {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    font-weight: 300;
+    font-size: 12.8px;
+    line-height: 14.8px;
+    text-transform: none !important;
+    letter-spacing: 0;
+  }
+
+  .privacy-policy
+    .cookie-policy
+    .cookie_notification_preferences
+    .copyright-text
+    #artlogic.noprint {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    font-weight: 300;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18.5px;
+    text-transform: none !important;
+    letter-spacing: 0;
+  }
+
+  .inner {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    font-weight: 300;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18.5px;
+    text-transform: none !important;
+    letter-spacing: 0;
+  }
+
+  @media only screen and (max-width: 768px) h2 {
+    font-size: 34px !important;
+    line-height: 40.6px;
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+  }
+
+  a {
+    text-underline-position: under;
+    text-decoration: 1px;
+  }
+
+  .navigation a {
+    letter-spacing: 3px !important;
+  }
+
+  .heading_wrapper.cascading-page-header #sub_nav {
+    float: left !important;
+  }
+
+  .small-links-container {
+    font-weight: 300;
+    text-align: left;
+    font-size: 16px;
+    line-height: 18.5px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    margin: 0 !important;
+  }
+
+  /* OTHER */
+
+  .button a {
+    font-family: "Uni Grotesk Std Medium", Arial, Helvetica, Sans-serif !important;
+    font-weight: 500;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+  }
+
+  .heading_wrapper.cascading-page-header h1 {
+    display: none;
+  }
+
+  #main_content .section-home #content.no_homepage_slideshow {
+    padding-top: 0;
+  }
+
+  .section-home #content.no_homepage_slideshow {
+    padding-top: 0;
+  }
+
+  /* more customization */
+
+  h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .secondary-text-inner {
+    font-family: "Edge L Light", Arial, Helvetica, Sans-serif !important;
+    /* font-size: 16px; */
+  }
+
+  body {
+    font-family: "Uni Grotesk Std Medium", sans-serif;
+  }
+</style>
