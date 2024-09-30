@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Art of Surf</title>
-    <link rel="stylesheet" href="initalRender.css" />
+    <!-- <link rel="stylesheet" href="initalRender.css" /> -->
   </head>
   <body>
     <main>
-      <div class="grid-container">
-        <div class="image-container">
+      <div class="newsletter-grid-container">
+        <div class="newsletter-image-container">
           <a
             href="https://vefagallery.com/exhibition/the-art-of-surf"
-            class="image-link"
+            class="newsletter-image-link"
             target="_self"
           >
             <img
-              class="image"
+              class="newsletter-image"
               alt="Abstract surf art"
               src="https://artlogic-res.cloudinary.com/w_4000,h_2500,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1067/usr/images/feature_panels/image/items/c2/c2c204b29ad447bc990e7da603a5942f/newsletter-desktop.jpg"
               height="695"
@@ -25,18 +25,18 @@
           </a>
           <span><br /></span>
         </div>
-        <div class="text-overlay">
-          <div class="text-overlay-container">
-            <h3 class="subheading">
+        <div class="newsletter-text-overlay">
+          <div class="newsletter-text-overlay-container">
+            <h3 class="newsletter-subheading">
               <a href="https://vefagallery.com/mailing-list/"> Newsletter </a>
             </h3>
-            <h3 class="subheading">
+            <h3 class="newsletter-subheading">
               <a href="https://vefagallery.com/mailing-list/">
                 Live in Art&nbsp;&mdash; be the first to learn about our events,
                 exhibitions, artists &amp; more.</a
               >
             </h3>
-            <h3 class="subheading">
+            <h3 class="newsletter-subheading">
               <a href="https://vefagallery.com/mailing-list/">
                 Subscribe &rarr;</a
               >
@@ -57,7 +57,7 @@
   }
 
   /* beginning of vefa style tag content */
-  .grid-container {
+  .newsletter-grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -66,20 +66,20 @@
     margin: auto;
   }
 
-  .image-container {
+  .newsletter-image-container {
     grid-column: 1 / span 12;
     grid-row: 1 / span 6;
     overflow: hidden;
     display: grid;
   }
 
-  .image {
+  .newsletter-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .text-overlay {
+  .newsletter-text-overlay {
     grid-column: 1 / span 5;
     grid-row: 3 / span 3;
     background-color: rgba(255, 255, 255, 1);
@@ -87,14 +87,14 @@
     z-index: 1;
   }
 
-  .text-overlay-container {
+  .newsletter-text-overlay-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .image-link {
+  .newsletter-image-link {
     display: flex;
     grid-row: 1 / span 1;
   }
@@ -119,17 +119,17 @@
     margin-right: 0;
   }
 
-  .subheading {
+  .newsletter-subheading {
     margin-inline: 50px;
     margin-bottom: 16px;
   }
 
-  .subheading::after {
+  .newsletter-subheading::after {
     content: none;
   }
 
   @media (min-width: 840px) and (max-width: 1023px) {
-    .grid-container {
+    .newsletter-grid-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(12, 1fr);
@@ -139,14 +139,14 @@
       padding-bottom: 10%;
     }
 
-    .text-overlay {
+    .newsletter-text-overlay {
       grid-column: 6 / span 5;
       grid-row: 5 / span 8;
     }
   }
 
   @media (max-width: 840px) {
-    .grid-container {
+    .newsletter-grid-container {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(7, 1fr);
@@ -155,21 +155,21 @@
       aspect-ratio: auto;
     }
 
-    .image-container {
+    .newsletter-image-container {
       grid-column: 1 / span 12;
       grid-row: 1 / span 5;
       overflow: hidden;
       display: grid;
     }
 
-    .text-overlay {
+    .newsletter-text-overlay {
       grid-column: 2 / span 5;
       grid-row: 3 / span 3;
       z-index: 1;
     }
 
     h3,
-    h3.subheading {
+    h3.newsletter-subheading {
       padding-left: 0;
       padding-right: 0;
       margin-inline: 0;
